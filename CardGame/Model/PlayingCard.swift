@@ -22,6 +22,13 @@ class PlayingCard : Card
         super.init()
     }
     
+    init(withRank: Int, ofSuit:String)
+    {
+        color = UIColor.redColor()
+        suit = ofSuit
+        rank = withRank
+    }
+    
     override func toString() -> String
     {
         let description = "The playing card rank is: \(rank) and its suit is \(suit). It has a color of \(color)."
