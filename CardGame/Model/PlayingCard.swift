@@ -38,7 +38,7 @@ class PlayingCard : Card
     
     func getColor() -> UIColor
     {
-       return color
+        return color
     }
     
     func getRank() -> Int
