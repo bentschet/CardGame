@@ -29,6 +29,12 @@ class Card
         return isFaceUp
     }
     
+    func setFacing(isFaceUp : Bool)
+    {
+        self.isFaceUp = isFaceUp
+    }
+        
+    
     func toString() -> String
     {
         let description = "This card is \(isFaceUp)"

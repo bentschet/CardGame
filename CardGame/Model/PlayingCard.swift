@@ -19,6 +19,7 @@ class PlayingCard : Card
         rank = 0
         suit = ""
         color = UIColor()
+        
         super.init()
     }
     
