@@ -17,16 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card back" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-Mo-FBc">
-                                <rect key="frame" x="180" y="127" width="240" height="346"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-u4-FEa">
-                                <rect key="frame" x="263" y="279" width="74" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Words"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-u4-FEa">
+                                <rect key="frame" x="189" y="131" width="223" height="337"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Words" backgroundImage="card back"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJY-hr-Vwj">
+                                <rect key="frame" x="189" y="79" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QJY-hr-Vwj" firstAttribute="leading" secondItem="Fjb-u4-FEa" secondAttribute="leading" id="0Qe-8U-nJm"/>
+                            <constraint firstItem="Fjb-u4-FEa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dSn-TM-z9U"/>
+                            <constraint firstItem="Fjb-u4-FEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="go0-LZ-7YM"/>
+                            <constraint firstItem="Fjb-u4-FEa" firstAttribute="top" secondItem="QJY-hr-Vwj" secondAttribute="bottom" constant="31" id="lRV-qK-oRP"/>
+                            <constraint firstItem="QJY-hr-Vwj" firstAttribute="width" secondItem="Fjb-u4-FEa" secondAttribute="width" id="lYb-zD-6rk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
