@@ -52,6 +52,11 @@ class PlayingCard : Card
         return suit
     }
     
+    func getCardData() -> String
+    {
+        return "\(PlayingCard.validRanks()[rank]) \(suit)"
+    }
+    
     class func validRanks() -> [String]
     {
         return ["??","A","2","3","4","5","6","7","9","10","J","Q","K"]
