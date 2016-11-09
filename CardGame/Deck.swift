@@ -39,7 +39,7 @@ class Deck
         
     }
     
-    func drawCard() -> Card!
+    func drawCard() -> Card?
     {
         if cards.count > 0
         {
@@ -51,8 +51,16 @@ class Deck
         }
     }
     
-    func drawRandomCard() -> Card!
+    func drawRandomCard() -> Card?
     {
-        return nil
+        if cards.count > 0
+        {
+            let randomIndex = Int (arc4random() % (UInt32)(cards.count))
+            return cards.removeAtIndex(randomIndex)
+        }
+        else
+        {
+            return nil
+        }
     }
 }
