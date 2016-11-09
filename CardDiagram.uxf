@@ -109,6 +109,7 @@ bg=pink
 + init()
 + shuffleDeck : Void
 + cutDeck : Void
++ drawRandomCard(): Card!
 bg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
