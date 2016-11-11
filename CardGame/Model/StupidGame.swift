@@ -11,10 +11,17 @@ import Foundation
 class StupidGame
 {
     internal var gameDeck : PlayingCardDeck
+    internal var slotOne : Int
+    internal var slotTwo : Int
+    internal var matchChecker : Bool
     
     init()
     {
         gameDeck = PlayingCardDeck()
+        slotOne = 0
+        slotTwo = 0
+        matchChecker = false
+        
     }
     
     func startGame() -> Void
