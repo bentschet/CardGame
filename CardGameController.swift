@@ -28,7 +28,7 @@ class CardGameController : UIViewController
         let content = "You clicked \(clickCount) times"
         if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.getCardData())", forState:UIControlState.Normal)
+            cardButton.setTitle("\(currentCard.rank) \(currentCard.suit)", forState:UIControlState.Normal)
             cardDeck = PlayingCardDeck()
         }
         else
