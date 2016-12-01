@@ -4,26 +4,29 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>10</x>
-      <y>10</y>
-      <w>250</w>
-      <h>100</h>
+      <x>80</x>
+      <y>630</y>
+      <w>280</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>Package::ClassName
+    <panel_attributes>CardGame.Model::StupidGame
 --
-Data Members
-Should be private (-)
+-gameDeck : PlayingCardDeck
+-slot : Int
+-matchChecker : Bool
 --
-Methods and init/Constructor
-public/private as needed 
-bg=yellow</panel_attributes>
++ init()
++ slotOne : Int
++ slotTwo : Int
++ matchChecker : Bool
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>80</x>
-      <y>140</y>
+      <y>130</y>
       <w>280</w>
       <h>180</h>
     </coordinates>
@@ -44,7 +47,7 @@ bg=blue
     <id>UMLClass</id>
     <coordinates>
       <x>470</x>
-      <y>140</y>
+      <y>130</y>
       <w>280</w>
       <h>180</h>
     </coordinates>
@@ -68,7 +71,7 @@ bg=cyan
     <id>Relation</id>
     <coordinates>
       <x>350</x>
-      <y>230</y>
+      <y>220</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
@@ -79,7 +82,7 @@ bg=cyan
     <id>UMLClass</id>
     <coordinates>
       <x>80</x>
-      <y>340</y>
+      <y>330</y>
       <w>280</w>
       <h>180</h>
     </coordinates>
@@ -98,7 +101,7 @@ bg=pink
     <id>UMLClass</id>
     <coordinates>
       <x>460</x>
-      <y>340</y>
+      <y>330</y>
       <w>280</w>
       <h>180</h>
     </coordinates>
@@ -117,7 +120,7 @@ bg=magenta</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>210</x>
-      <y>510</y>
+      <y>500</y>
       <w>420</w>
       <h>130</h>
     </coordinates>
@@ -128,7 +131,7 @@ bg=magenta</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>260</x>
-      <y>280</y>
+      <y>270</y>
       <w>230</w>
       <h>310</h>
     </coordinates>
@@ -143,7 +146,7 @@ m2=52
     <id>Relation</id>
     <coordinates>
       <x>1670</x>
-      <y>220</y>
+      <y>210</y>
       <w>110</w>
       <h>160</h>
     </coordinates>
@@ -154,5 +157,23 @@ m2=1..n
 r2=student
 teaches to v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>20</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Package::ClassName
+--
+Data Members
+Should be private (-)
+--
+Methods and init/Constructor
+public/private as needed 
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
