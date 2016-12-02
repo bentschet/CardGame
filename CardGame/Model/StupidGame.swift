@@ -50,7 +50,7 @@ class StupidGame
         
         while gameDeck.cards.count > 0
         {
-            if(slotOne[0].rank == slotTwo[0].rank)
+            if(slotOne[0].rank == slotTwo[0].rank || slotOne[0].suit == slotTwo[0].suit)
             {
                 hasMatch = true
             }
